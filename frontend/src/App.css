@@ -1,0 +1,192 @@
+.App {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 40px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.App-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+}
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.upload-section {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px dashed #dee2e6;
+}
+
+.file-input-container {
+  margin-bottom: 20px;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-input-label {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.file-input-label:hover {
+  background-color: #0056b3;
+}
+
+.selected-file {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.upload-button {
+  padding: 12px 30px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.upload-button:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.upload-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #f5c6cb;
+}
+
+.results-section {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.results-section h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.prediction-result {
+  margin-bottom: 30px;
+}
+
+.main-prediction {
+  margin-bottom: 20px;
+}
+
+.main-prediction h3 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.prediction-badge {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.prediction-badge.normal {
+  background-color: #28a745;
+  color: white;
+}
+
+.prediction-badge.b {
+  background-color: #ffc107;
+  color: black;
+}
+
+.prediction-badge.ir {
+  background-color: #fd7e14;
+  color: white;
+}
+
+.prediction-badge.or {
+  background-color: #dc3545;
+  color: white;
+}
+
+.signal-info {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.signal-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.confidence-section h3 {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.confidence-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.confidence-item {
+  width: 100%;
+}
+
+.confidence-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.confidence-bar {
+  height: 20px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.confidence-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #007bff, #28a745);
+  transition: width 0.5s ease;
+}
